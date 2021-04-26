@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Description goes here">
+    <meta name="keywords" content="Discord Bot, My Akeno, Akeno, Akeno Himejima, Aobuta, Anime">
+    <meta name="author" content="SkyAlumny#6090">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FF69B4">
+
+    <meta property="og:url" content="https://www.myakeno.xyz/guides/setting-up-the-muterole">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="My Akeno Guides | Setting up the Mute Role">
+    <meta property="og:description" content="Before you can use the moderative command Mute, you have to set which role is going to be the Mute role. If you haven't tried anyth...">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/835188365732479027/835263912780759120/background.jpeg">
+    <meta property="og:site_name" content="www.myakeno.xyz">
+
+    <meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="www.myakeno.xyz">
+    <meta property="twitter:url" content="https://www.myakeno.xyz/guides/setting-up-the-muterole">
+    <meta name="twitter:title" content="My Akeno Guides | Setting up the Mute Role">
+    <meta name="twitter:description" content="Before you can use the moderative command Mute, you have to set which role is going to be the Mute role. If you haven't tried anyth...">
+    <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/835188365732479027/835263912780759120/background.jpeg">
+
+    <link rel="icon" type="image/png" href="https://i.imgur.com/8rqmFEw.jpg" />
+
+    <!--Stylesheets-->
+
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../src/css/guides.css">
+    <!--------------->
+    <title> Akeno Guides | Setting up the Mute Role </title>
+
+    <script src="../src/javascript/jquery/jquery-3.5.1.js"></script>
+    <script src="../src/javascript/main.js"></script>
+    <script src="../src/javascript/guides.js"></script>
+
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-bar-img">
+        <img src="https://i.imgur.com/8rqmFEw.jpg" alt="">
+        <h1>My Akeno</h1>
+      </div>
+      <div class="nav-bar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav-bar-links">
+        <ul>
+          <li><a href="https://www.myakeno.xyz">HOME</a></li>
+          <li><a href="https://commands.myakeno.xyz">COMMANDS</a></li>
+          <li><a href="https://market.myakeno.xyz">MARKET</a></li>
+          <li><a href="https://invite.myakeno.xyz">INVITE</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-content">
+      <div class="page-wallpaper" style="background-image:url(https://cdn.discordapp.com/attachments/835188365732479027/835263912780759120/background.jpeg)"></div>
+      <h1>Setting up the Mute Role</h1>
+      <div class="article-author">
+        <img src="https://cdn.discordapp.com/avatars/715491864739840063/95ca3fce10098cd8de109f012d3ae2ac.png?size=1024" alt="">
+        <div class="article-author-text">
+          <h5>
+            <a href="https://github.com/skyalumny/">
+             SkyAlumny
+            </a>
+          </h5>
+          <p>April 25, 2021 • 5 min read</p>
+        </div>
+      </div>
+      <div class="topic">
+        <p>Before you can use the moderative command <code>Mute</code>, you have to set which role is going to be the Mute role. If you haven't tried anything of the sort yet, we'll walk you through it</p>
+        <h2>Decide a Mute Role</h2>
+        <p>Decide which role you are going to use when using Akeno's mute command. The Color RED gives it a dangerous feeling, and the name Muted gives it justice. However, you can just pick any name and color you want. It's all up to you.</p>
+        <h2>Set or Check the Role Permissions.</h2>
+        <p>Go to Server Settings -> Roles -> The Role you're planning to set as Mute Role -> Scroll Down to "Send Messages Permission" -> Disable.</p><br>
+        <img src="https://raw.githubusercontent.com/BearTS/mai-docs/main/docs/assets/muterole-setup.png" width="600"><br>
+        <br><p>Make sure the mute role is above all other member's role because other role permissions will override it. Just make sure all moderative permissions (ADMINISTRATOR, Kick Members, Ban Members, Manage Messages, etc.) are turned off. See to it also that this role is below Akeno's highest role. For effeciency, place this role under Akeno's highest role. </p><br>
+        <p>You can also disallow muted members from connecting to voice channel by disabling 'Connect' from the mute role's permission.<br></p>
+        <img class="assets" src="https://mystifying-rosalind-42d723.netlify.app/assets/images/disable-connect-a8e856c0c8c99588f4f9796888db0cfa.png" width="441"><br>
+        <p>If you are well versed in managing role permissions, you may set any disabling permissions to the muterole, and it will take effect.<br>
+        If you haven't created a role for this yet, create one and just follow the preceeding procedures.</p>
+        <h2>Have Akeno Recognize the Muterole.</h2>
+        <p>You can now have Akeno recognize this muterole by using the command <code>ak!setmute <Role></code>. Akeno will be using this role to add to users whenever the <code>mute</code> command is called.</p><br>
+          <img src="https://i.imgur.com/ELd7FOp.png"><br>
+        <p>You can also check which role the muterole is currently set to by using the same command without parameters<br>You can now use the moderative command ak!mute in your server! </p>
+        <img src="https://i.imgur.com/g7oJWjf.png">
+      </div>
+      <span class="article-title-line"></span>
+      <div class="footer-author-note">
+        <img src="https://cdn.discordapp.com/avatars/715491864739840063/95ca3fce10098cd8de109f012d3ae2ac.png?size=1024" alt="">
+        <div class="footer-author-info">
+          <h4>WRITTEN BY</h4>
+          <h3><a href="https://github.com/slyaöi,my">SkyAlumny#6090</a> <a href="https://github.com/skyalumny"><span>SkyAlumny</span></a></h3>
+          <p>Akeno IS LOVE </p>
+        </div>
+      </div>
+      <span class="article-title-line"></span>
+    </div>
+    <div class="footer">
+      <div class="footer-information">
+        <h1>My Akeno</h1>
+        <p>
+          © Copyright My Akeno 2021. All rights reserved <br>
+          This site is made by SkyAlumny#6090
+        </p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="https://www.myakeno.xyz/guides">Back to Guides</a></li>
+          <li><a href="https://commands.myakeno.xyz/">Commands</a></li>
+          <li><a href="https://market.myakeno.xyz/">Market</a></li>
+          <li><a href="https://invite.myakeno.xyz/" target="_blank">Invite</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

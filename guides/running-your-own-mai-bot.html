@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Description goes here">
+    <meta name="keywords" content="Discord Bot, My Akeno, Akeno, Akeno Himejima, Aobuta, Anime">
+    <meta name="author" content="SkyAlumny#6090">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FF69B4">
+
+    <meta property="og:url" content="https://www.myakeno.xyz/guides/running-your-own-mai-bot">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=" Akeno Guides | Running your own Akeno Bot">
+    <meta property="og:description" content="To use discord.js (Mai Bot uses Discord.js to interact with the Discord API), you'll need to install Node.js. If you do have Node installed, but have an older versio...">
+    <meta property="og:image" content="https://www.myakeno.xyz/src/images/avatar-wallpaper-long.jpg">
+    <meta property="og:site_name" content="www.myakeno.xyz">
+
+    <meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="www.myakeno.xyz">
+    <meta property="twitter:url" content="https://www.myakeno.xyz/guides/running-your-own-mai-bot">
+    <meta name="twitter:title" content="My Akeno Guides | Running your own Akeno Bot">
+    <meta name="twitter:description" content="To use discord.js (Mai Bot uses Discord.js to interact with the Discord API), you'll need to install Node.js. If you do have Node installed, but have an older versio...">
+    <meta name="twitter:image" content="https://www.myakeno.xyz/src/images/avatar-wallpaper-long.jpg">
+
+    <link rel="icon" type="image/png" href="https://i.imgur.com/8rqmFEw.jpg" />
+
+    <!--Stylesheets-->
+
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../src/css/guides.css">
+    <!--------------->
+    <title> Akeno Guides | Running your own Akeno bot </title>
+
+    <script src="../src/javascript/jquery/jquery-3.5.1.js"></script>
+    <script src="../src/javascript/main.js"></script>
+    <script src="../src/javascript/guides.js"></script>
+
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-bar-img">
+        <img src="https://i.imgur.com/8rqmFEw.jpg" alt="">
+        <h1>My Akeno</h1>
+      </div>
+      <div class="nav-bar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav-bar-links">
+        <ul>
+          <li><a href="https://www.myakeno.xyz">HOME</a></li>
+          <li><a href="https://commands.myakeno.xyz">COMMANDS</a></li>
+          <li><a href="https://market.myakeno.xyz">MARKET</a></li>
+          <li><a href="https://invite.myakeno.xyz">INVITE</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-content">
+      <div class="page-wallpaper" style="background-image:url(../src/images/avatar-wallpaper-long.jpg)"></div>
+      <h1>Running your own Akeno bot</h1>
+      <div class="article-author">
+        <img src="https://cdn.discordapp.com/avatars/715491864739840063/95ca3fce10098cd8de109f012d3ae2ac.png?size=1024" alt="">
+        <div class="article-author-text">
+          <h5>
+            <a href="https://github.com/skyalumny/">
+             SkyAlumny
+            </a>
+          </h5>
+          <p>April 25, 2021 • 5 min read</p>
+        </div>
+      </div>
+      <p> To use discord.js (Mai Bot uses Discord.js to interact with the Discord API), you'll need to install Node.js. If you do have Node installed, but have an older version (i.e. anything below 14.0), you should upgrade to the latest version. Akeno requires Node 14.0 or higher.</p>
+      <div class="topic">
+        <h2>Get the project Locally</h2>
+        <p>Run the following commands to get the project locally</p>
+        <pre>
+<code>git clone https://github.com/maisans-maid/Mai.git # or clone your own fork
+cd Mai
+npm install
+npm build </code> </pre>
+        <h2>Create a new .env file in the root directory of the project with the following properties</h2>
+        <pre class="env">
+<code>DISCORD_TOKEN=
+MONGO_URI=
+
+<span class="comment"># Chatbot id and key, if you want to use the chatbot feature</span>
+<span class="comment"># contact SkyAlumny#6090 for more info</span>
+<span class="comment"># [OPTIONAL]</span>
+
+chatbot_id=
+chatbot_key=</code> </pre>
+        This is also present on .env_example file on the root directory of the project<br><br>
+        <b><code class="inline">DISCORD_TOKEN</code></b> should be the bot token obtained from Discord's developer panel.<br>
+        <b><code class="inline">MONGO_URI</code></b> should be your mongo DB URI, if you want to use the MONGO Database. You can use the bot without this too (not recommended, at some point it might crash the bot), but you won't be able to use commands that rely on Mongo DB.<br>
+        <b><code class="inline">chatbot_id</code></b> and <b><code class="inline">chatbot_key</code></b> are completetly optional and it is required only if you want to enable chat bot system of mai
+      </div>
+      <div class="topic">
+        <h2>Start The Bot</h2>
+        <p>You can start the bot by typing in <b><code class="inline">npm start</code></b> in the commandline.</p>
+        </div>
+      <span class="article-title-line"></span>
+      <div class="footer-author-note">
+        <img src="https://cdn.discordapp.com/avatars/715491864739840063/95ca3fce10098cd8de109f012d3ae2ac.png?size=1024" alt="">
+        <div class="footer-author-info">
+          <h4>WRITTEN BY</h4>
+          <h3><a href="https://github.com/slyaöi,my">SkyAlumny#6090</a> <a href="https://github.com/skyalumny"><span>SkyAlumny</span></a></h3>
+          <p>Akeno IS LOVE </p>
+        </div>
+      </div>
+      <span class="article-title-line"></span>
+    </div>
+    <div class="footer">
+      <div class="footer-information">
+        <h1>My Akeno</h1>
+        <p>
+          © Copyright My Akeno 2021. All rights reserved <br>
+          This site is made by SkyAlumny#6090
+        </p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="https://www.myakeno.xyz/guides">Back to Guides</a></li>
+          <li><a href="https://commands.myakeno.xyz/">Commands</a></li>
+          <li><a href="https://market.myakeno.xyz/">Market</a></li>
+          <li><a href="https://invite.myakeno.xyz/" target="_blank">Invite</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

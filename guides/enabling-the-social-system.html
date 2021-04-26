@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Description goes here">
+    <meta name="keywords" content="Discord Bot, My Akeno, Akeno, Akeno Himejima, Aobuta, Anime">
+    <meta name="author" content="SkyAlumny#6090">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FF69B4">
+
+    <meta property="og:url" content="https://www.myakeno.xyz/guides/enabling-the-social-system">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=" Akeno Guides | Enabling the Social System (xp, economy, and more!)">
+    <meta property="og:description" content="XP (Experience Points) is a virtual point a user earns upon chatting on the server where this feature is enabled in and whose channel is not exclude...">
+    <meta property="og:image" content="https://www.myakeno.xyz/src/images/banner-social-System.jpg">
+    <meta property="og:site_name" content="www.myakeno.xyz">
+
+    <meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="www.myakeno.xyz">
+    <meta property="twitter:url" content="https://www.myakeno.xyz/guides/custom-prefix-for-your-server">
+    <meta name="twitter:title" content="My Akeno Guides | Enabling the Social System (xp, economy, and more!)">
+    <meta name="twitter:description" content="XP (Experience Points) is a virtual point a user earns upon chatting on the server where this feature is enabled in and whose channel is not exclude...">
+    <meta name="twitter:image" content="https://www.myakeno.xyz/src/images/banner-social-system.jpg">
+
+    <link rel="icon" type="image/png" href="https://i.imgur.com/8rqmFEw.jpg" />
+
+    <!--Stylesheets-->
+
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../src/css/guides.css">
+    <!--------------->
+    <title> Akeno Guides | Enabling the Social System </title>
+
+    <script src="../src/javascript/jquery/jquery-3.5.1.js"></script>
+    <script src="../src/javascript/main.js"></script>
+    <script src="../src/javascript/guides.js"></script>
+
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-bar-img">
+        <img src="https://i.imgur.com/8rqmFEw.jpg" alt="">
+        <h1>My Akeno</h1>
+      </div>
+      <div class="nav-bar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav-bar-links">
+        <ul>
+          <li><a href="https://www.myakeno.xyz">HOME</a></li>
+          <li><a href="https://commands.myakeno.xyz">COMMANDS</a></li>
+          <li><a href="https://market.myakeno.xyz">MARKET</a></li>
+          <li><a href="https://invite.myakeno.xyz">INVITE</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-content">
+      <div class="page-wallpaper" style="background-image:url(https://cdn.discordapp.com/attachments/835188365732479027/835263912780759120/background.jpeg)"></div>
+      <h1>Enabling the Social System (xp, economy, and more!)</h1>
+      <div class="article-author">
+        <img src="https://cdn.discordapp.com/avatars/715491864739840063/95ca3fce10098cd8de109f012d3ae2ac.png?size=1024" alt="">
+        <div class="article-author-text">
+          <h5>
+            <a href="https://github.com/skyalumny/">
+             SkyAlumny
+            </a>
+          </h5>
+          <p>April 25, 2021 • 5 min read</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>What is XP</h2>
+        <p>XP (Experience Points) is a virtual point a user earns upon chatting on the server where this feature is enabled in and whose channel is not excluded from the blacklist. Earning XP is a fun way to challenge your friends with, and can also denote of how much you are actively involved in the server, which can give anyone a good grasp of your server activity.</p>
+        <h2>How to gain XP</h2>
+        <p>You can start gaining XP when you start chatting on an xp-enabled channel in the server. You can gain at a rate of 15-35 XP per minute.</p>
+        <h2>How to Level Up</h2>
+        <p>If you accumulate enough xp, you are automatically promoted to another level. Required XP to level up for each level increases as you progress through the higher ranks.</p>
+        <h2>How to view your level card</h2>
+        <p>To view your level card, just type <code>ak!rank</code>. You can also see the level card of user whom you share the server with by mentioning them or using their ID.</p>
+        <h2>How to view the server leaderboard</h2>
+        <p>o view the server leaderboard, just type ak!lb. Akeno will only show the top 10 earners of the server, however, you will know your rank at the bottom of the embed.</p>
+      </div>
+      <div class="topic">
+        <h2>Enabling the XP System</h2>
+        <p>By default, after Akeno joins your server, the XP System is off. However, anyone on the server who has the <code>ADMINISTRATOR</code> permission can enable it. Typing the command <code>ak!xptoggle</code> will toggle the xp system for the server on if it's off, and off if it's on.</p>
+        <h2>Enabling the Economy System</h2>
+        <p>Enabling the xp system automatically enables the economy system</p>
+        <h2>Disabling the XP System on some Channels</h2>
+        <p>When enabling this feature on your server first time, all channels will be included in the gathering and monitoring of XP. If you want to exclude some channels, say because these channels caters for spammers (spam channel), or the channel is for bot-usage and you want xp to be effective only on normal conversation, you can exclude channels from being listened to by typing the command <code>ak!xpexcempt [channel1] &lt;channel2&gt;... &lt;channeln&gt;</code>. The command accepts multiple channels at once so you can get rid of all those channels in a single command! Only server <code>ADMINISTRATOR</code> can use this command.</p>
+        <h2>Enabling the XP System on disabled channels.</h2>
+        <p>After you excempted a channel from the xp feature, you might reach to the point that you want to enable it on the channel again, you can do so by typing <code>ak!xpallow [channel1] &lt;channel2&gt;... &lt;channeln&gt;</code>. Same with disabling, the command accepts multiple channels at once. Only server <code>ADMINISTRATOR</code> can use this command.</p>
+        <h2>Resetting the xp of a specific user</h2>
+        <p>You might think that you wanted to reset a specific user's xp because of misconduct, or because of spam abuse, or any reason at all. You can reset a user's xp by typing in <code>ak!userxpreset &lt;User&gt;</code>, and the user's xp will be forever gone. This action is irreversible, and thus xp lost will never be recovered.</p>
+        <h2>Resetting the xp of the whole server</h2>
+        <p>Anyone on the server with the <code>ADMINISTRATOR</code> permissions can reset all of user's xp by typing <code>ak!xpreset</code>. This action is irreversible, and XP lost will never be recovered.</p>
+      </div>
+      <span class="article-title-line"></span>
+      <div class="footer-author-note">
+        <img src="https://cdn.discordapp.com/avatars/715491864739840063/95ca3fce10098cd8de109f012d3ae2ac.png?size=1024" alt="">
+        <div class="footer-author-info">
+          <h4>WRITTEN BY</h4>
+          <h3><a href="https://github.com/slyaöi,my">SkyAlumny#6090</a> <a href="https://github.com/skyalumny"><span>SkyAlumny</span></a></h3>
+          <p>Akeno IS LOVE </p>
+        </div>
+      </div>
+      <span class="article-title-line"></span>
+    </div>
+    <div class="footer">
+      <div class="footer-information">
+        <h1>My Akeno</h1>
+        <p>
+          © Copyright My Akeno 2021. All rights reserved <br>
+          This site is made by SkyAlumny#6090
+        </p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="https://www.myakeno.xyz/guides">Back to Guides</a></li>
+          <li><a href="https://commands.myakeno.xyz/">Commands</a></li>
+          <li><a href="https://market.myakeno.xyz/">Market</a></li>
+          <li><a href="https://invite.myakeno.xyz/" target="_blank">Invite</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
